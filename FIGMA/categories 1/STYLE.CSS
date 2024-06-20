@@ -1,0 +1,249 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+body {
+    margin: 0;
+    font-family:'Times New Roman';
+    background-color: #FFFAE5;
+    color: #333;
+    font-style: bold;
+}
+
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color:yellowgreen;
+    font-family:'Times New Roman';
+    font-style: bold;
+}
+
+SPAN{
+    COLOR:rgb(255, 173, 21);
+}
+
+.logo-image{
+    width: 30px;
+    height:30px;
+    padding: 5px;
+    margin:5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    font-style: bold;
+    font-size: 18px;;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav .auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav .auth-buttons .sign-in {
+    background-color: #004D40;
+    padding:8px 18px;
+    color: white;
+    margin: 2rem;
+}
+
+nav .auth-buttons .register {
+    background-color: #B2DFDB;
+    padding:8px 14px;
+    color: black;
+    margin: 2rem;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.category-section {
+    max-width: 1200px;
+    margin: 0 auto;  
+    margin-top:-30px;
+    font-family:'Times New Roman';
+}
+
+.category-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    padding-left: 28px;
+    font-family:'Times New Roman';
+}
+
+.category-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top:-220px;
+    padding-left: 30px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.category-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.category-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family:'Times New Roman';
+}
+
+#para{
+    font-size: 20px;
+    font-family:'Times New Roman';
+}
+.get-started {
+    background-color: #B2DFDB;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-image img {
+    width: 600px;
+    height: 600px;
+    align-items: center; 
+    padding-left: 50px;
+    padding-top: 70px;
+    animation: slide-in 1s ease-out backwards;
+}
+
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.2;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.category-links {
+    margin-top: -120px;
+    font-family:'Times New Roman';
+    display: flex;
+    column-gap:60px; /* Add gap between links */
+}
+
+.category-links .link1 {
+    text-decoration: none;
+    background-color: #004D40;
+    color:white;
+    font-weight: bold;
+    padding:5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.category-links .link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.img-container{
+    display: flex;
+}
+
+
+
+/* media query */
+
+@media (max-width: 1163px) {
+    nav ul {
+        gap: 20px; /* Reduce the gap between nav links */
+        font-size: 14px; /* Decrease the font size of nav links */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Ensure the font size of individual nav links is reduced */
+    }
+
+    nav .auth-buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .auth-buttons button {
+        margin-left: 5px;
+        padding: 6px 12px; /* Decrease padding for smaller buttons */
+        font-size: 14px; /* Decrease font size */
+    }
+
+    nav .auth-buttons .sign-in {
+        padding: 6px 12px;
+    }
+
+    nav .auth-buttons .register {
+        padding: 6px 12px;
+    }
+
+    .category-section h1 {
+        font-size: 28px; /* Reduce the font size of the section title */
+        margin-bottom: -60px; /* Adjust margin for spacing */
+    }
+
+    .category-text h2 {
+        font-size: 24px; /* Reduce the font size of the category title */
+        margin-top: -40px; /* Add margin-top for spacing */
+    }
+
+    #para {
+        font-size: 16px; /* Reduce the font size of the paragraph */
+    }
+
+    .category-content {
+        margin-top:-70px; /* Add margin for spacing */
+    }
+
+     .category-image img {
+        width: 500px; 
+        height: 500px; 
+        padding-left: 0; 
+        padding-top: 10px;
+        margin-top: 20px; 
+     }
+    .category-links {
+        margin-top: 20px; /* Adjust margin to reduce overlap */
+        column-gap: 20px; /* Reduce gap between category links */
+        font-size: 0.9rem; /* Reduce font size of links */
+        flex-direction: column; /* Stack links vertically */
+        row-gap: 10px; /* Add gap between rows */
+    }
+    
+}
